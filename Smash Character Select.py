@@ -104,14 +104,21 @@ def stage_math(selection1, selection2):
     hkp_character_1 = character_dict[selection1]['hkp']
     hkp_character_2 = character_dict[selection2]['hkp']
     if (plat_character_1 >= plat_character_2) and (vkp_character_1 >= vkp_character_2) and (hkp_character_1 < hkp_character_2):
-        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Smashville \n 4. Pokemon Stadium 2 \n 5. Small Battlefield \n 6. Kalos Pokemon League \n 7. Town and City')
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Smashville \n 4. Pokemon Stadium 2 \n 5. Small Battlefield \n 6. Kalos Pokemon League \n 7. Town and City \n 8. Final Destination')
     elif (plat_character_1 >= plat_character_2) and (vkp_character_1 >= vkp_character_2) and (hkp_character_1 >= hkp_character_2):
-        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Smashville \n 4. Pokemon Stadium 2 \n 5. Small Battlefield \n 6. Town and City \n 7. Kalos Pokemon League')
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Smashville \n 4. Pokemon Stadium 2 \n 5. Small Battlefield \n 6. Final Destination \n 6. Town and City \n 7. Kalos Pokemon League')
     elif (plat_character_1 >= plat_character_2) and (vkp_character_1 < vkp_character_2) and (hkp_character_1 < hkp_character_2):
-        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Small Battlefield \n 4. Smashville \n 5. Pokemon Stadium 2 \n 6. Kalos Pokemon League \n 7. Town and City')
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Small Battlefield \n 4. Smashville \n 5. Pokemon Stadium 2 \n 6. Kalos Pokemon League \n 7. Town and City \n 8. Final Destination' )
     elif (plat_character_1 >= plat_character_2) and (vkp_character_1 < vkp_character_2) and (hkp_character_1 >= hkp_character_2):
-        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Pokemon Stadium 2 \n 4. Smashville \n 5. Small Battlefield \n 6. Town and City \n 7. Kalos Pokemon League')
-    elif 
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Pokemon Stadium 2 \n 4. Smashville \n 5. Small Battlefield 6. Final Destination \n 7. Town and City \n \n 8. Kalos Pokemon League')
+    elif (plat_character_1 < plat_character_2) and (vkp_character_1 >= vkp_character_2) and (hkp_character_1 >= hkp_character_2):
+        return print('1. Pokemon Stadium 2 \n 2. Smashville \n 3. Final Destination \n 4. Small Battlefield \n 5. Town and City \n 6. Kalos Pokemon League \n  7. Yoshis Story \n 8. Battlefield')
+    elif (plat_character_1 < plat_character_2) and (vkp_character_1 < vkp_character_2) and (hkp_character_1 >= hkp_character_2):
+        return print('1. Kalos Pokemon League \n 2. Town and City \n 3. Smashville \n 4. Final Destination \n 5. Smashville \n 6. Small Battlefield \n  \n  7. Battlefield \n 8. Yoshis Story')
+    elif (plat_character_1 < plat_character_2) and (vkp_character_1 >= vkp_character_2) and (hkp_character_1 < hkp_character_2):
+        return print('1. Pokemon Stadium 2 \n 2. Smashville \n 3. Final Destination \n 4. Small Battlefield \n 5. Town and City \n 6. Kalos Pokemon League \n  7. Yoshis Story \n 8. Battlefield')
+    elif (plat_character_1 < plat_character_2) and (vkp_character_1 < vkp_character_2) and (hkp_character_1 < hkp_character_2):
+        return print('1. Final Destination \n 2. Kalos Pokemon League \n 3. Final Destination \n 4. Small Battlefield \n 5. Pokemon Stadium 2 \n 6. Smashville \n  7. Battlefield \n 8. Yoshis Sotry')
 # creating main window
 root = tk.Tk()
 
