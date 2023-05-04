@@ -1,21 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 import tkinter as tk
 from PIL import ImageTk, Image
 import os
 
-#Character_List
-characters = ['Mario', 'Donkey Kong', 'Link','Samus', 'Dark Samus','Yoshi', 'Kirby', 'Fox','Pikachu', 'Luigi', 'Ness', 'Captain Falcon', 'Jigglypuff', 'Peach', 'Daisy', 'Bowser', 'Ice Climbers', 
-              'Sheik', 'Zelda', 'Dr. Mario', 'Pichu', 'Falco', 'Marth', 'Lucina', 'Young Link', 'Ganondorf', 'Mewtwo', 'Roy', 'Chrom', 'Mr. Game and Watch', 'Meta Knight', 'Pit', 'Dark Pit', 'Zero Suit Samus', 'Wario', 'Snake', 'Ike', 'Pokemon Trainer', 
-              'Diddy Kong', 'Lucas', 'Sonic', 'King Dedede', 'Olimar', 'Lucario', 'R.O.B', 'Toon Link', 'Wolf', 'Villager', 'Mega Man', 'Wii Fit Trainer', 'Rosalina', 'Little Mac', 'Little Mac', 'Greninja', 'Mii Brawler','Mii Swordfighter', 
-              'Mii Gunner', 'Palutena', 'Pac-Man', 'Robin', 'Shulk', 'Bowser Jr.', 'Duck Hunt', 'Ryu', 'Ken', 'Cloud', 'Corrin', 'Bayonetta', 'Inkling', 'Ridley', 'Simon', 'Richter', 'King K. Rool', 'Isabelle', 'Incineroar', 'Piranha Plant', 'Joker', 
-              'Hero', 'Banjo', 'Terry', 'Byleth', 'Min Min', 'Steve', 'Sephiroth', 'Aegis', 'Kazuya', 'Sora']
-
-#Character Dictionary
 character_dict = {'Mario': {'number': 1, 'plats': 10, 'vkp': 9, 'hkp':3}, 
                   'Donkey Kong': {'number': 2, 'plats': 8, 'vkp': 9, 'hkp': 5}, 
                   'Link': {'number': 3, 'plats': 3, 'vkp':4 ,'hkp':8}, 
@@ -43,7 +35,7 @@ character_dict = {'Mario': {'number': 1, 'plats': 10, 'vkp': 9, 'hkp':3},
                   'Mewtwo': {'number': 25, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Roy': {'number': 26, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Chrom': {'number': 27, 'plats': 5, 'vkp':6, 'hkp': 8},
-                  'Mr. Game and Watch': {'number': 28, 'plats': 5, 'vkp':6, 'hkp': 8},
+                  'Mr. Game & Watch': {'number': 28, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Meta Knight': {'number': 29, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Pit': {'number': 30, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Dark Pit': {'number': 31, 'plats': 5, 'vkp':6, 'hkp': 8},
@@ -97,29 +89,29 @@ character_dict = {'Mario': {'number': 1, 'plats': 10, 'vkp': 9, 'hkp':3},
                   'Min Min': {'number': 79, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Steve': {'number': 80, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Sephiroth': {'number': 81, 'plats': 5, 'vkp':6, 'hkp': 8},
-                  'Aegis': {'number': 82, 'plats': 5, 'vkp':6, 'hkp': 8},
+                  'Pyra/Mythra': {'number': 82, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Kazuya': {'number': 83, 'plats': 5, 'vkp':6, 'hkp': 8},
                   'Sora': {'number': 84, 'plats': 5, 'vkp':6, 'hkp': 8},
 
                  }
 
-#creates random character
-def choose_random():
-    character = random.choice(characters)
-    while True:
-        print(character)
-        answer = input("Do you own this character (y or n) \n" )
-        if answer == 'y':
-         return character
-        elif answer == 'n':
-            character = random.choice(characters)
-            continue
-        else:
-            print("You need to answer y or n")
-            continue
 
-agent = choose_random()
-print("You will be playing the game as {}.".format(agent))
+def stage_math(selection1, selection2):
+    plat_character_1 = character_dict[selection1]['plats']
+    plat_character_2 = character_dict[selection2]['plats']
+    vkp_character_1 = character_dict[selection1]['vkp']
+    vkp_character_2 = character_dict[selection2]['vkp']
+    hkp_character_1 = character_dict[selection1]['hkp']
+    hkp_character_2 = character_dict[selection2]['hkp']
+    if (plat_character_1 >= plat_character_2) and (vkp_character_1 >= vkp_character_2) and (hkp_character_1 < hkp_character_2):
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Smashville \n 4. Pokemon Stadium 2 \n 5. Small Battlefield \n 6. Kalos Pokemon League \n 7. Town and City')
+    elif (plat_character_1 >= plat_character_2) and (vkp_character_1 >= vkp_character_2) and (hkp_character_1 >= hkp_character_2):
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Smashville \n 4. Pokemon Stadium 2 \n 5. Small Battlefield \n 6. Town and City \n 7. Kalos Pokemon League')
+    elif (plat_character_1 >= plat_character_2) and (vkp_character_1 < vkp_character_2) and (hkp_character_1 < hkp_character_2):
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Small Battlefield \n 4. Smashville \n 5. Pokemon Stadium 2 \n 6. Kalos Pokemon League \n 7. Town and City')
+    elif (plat_character_1 >= plat_character_2) and (vkp_character_1 < vkp_character_2) and (hkp_character_1 >= hkp_character_2):
+        return print(' 1. Yoshis Story \n 2. Battlefield \n 3. Pokemon Stadium 2 \n 4. Smashville \n 5. Small Battlefield \n 6. Town and City \n 7. Kalos Pokemon League')
+    elif 
 # creating main window
 root = tk.Tk()
 
@@ -248,9 +240,9 @@ def LucinaCallBack2():
     character2 = 'Lucina'
 def YoungLinkCallBack():
     global character
-    character = 'YoungLink'
+    character = 'Young Link'
 def YoungLinkCallBack2():
-    character2 = 'YoungLink'
+    character2 = 'Young Link'
 def GanondorfCallBack():
     global character
     character = 'Ganondorf'
@@ -829,10 +821,4 @@ tk.Button(newWindow, command = MiiGunnerCallBack2).place(x=840, y=340)
 
 # running the application
 root.mainloop()
-
-
-# In[ ]:
-
-
-
 
