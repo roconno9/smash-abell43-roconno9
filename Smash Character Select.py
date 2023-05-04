@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[25]:
+# In[5]:
 
 
 import tkinter as tk
@@ -14,348 +14,433 @@ root = tk.Tk()
 # loading the image
 img = ImageTk.PhotoImage(Image.open("SmashRoster.jpg"))
 
-
 def MarioCallBack():
+    global character
     character = 'Mario'
 def MarioCallBack2():
     character2 = 'Mario'
 def DKCallBack():
+    global character
     character = 'Donkey Kong'
 def DKCallBack2():
     character2 = 'Donkey Kong'
 def LinkCallBack():
+    global character
     character = 'Link'
 def LinkCallBack2():
     character2 = 'Link'
 def SamusCallBack():
+    global character
     character = 'Samus'
 def SamusCallBack2():
     character2 = 'Samus'
 def DarkSamusCallBack():
+    global character
     character = 'Dark Samus'
 def DarkSamusCallBack2():
     character2 = 'Dark Samus'
 def YoshiCallBack():
+    global character
     character = 'Yoshi'
 def YoshiCallBack2():
     character2 = 'Yoshi'
 def KirbyCallBack():
+    global character
     character = 'Kirby'
 def KirbyCallBack2():
     character2 = 'Kirby'
 def FoxCallBack():
+    global character
     character = 'Fox'
 def FoxCallBack2():
     character2 = 'Fox'
 def PikachuCallBack():
+    global character
     character = 'Pikachu'
 def PikachuCallBack2():
     character2 = 'Pikachu'
 def LuigiCallBack():
+    global character
     character = 'Luigi'
 def LuigiCallBack2():
     character2 = 'Luigi'
 def NessCallBack():
+    global character
     character = 'Ness'
 def NessCallBack2():
     character2 = 'Ness'
 def CaptainFalconCallBack():
+    global character
     character = 'Captain Falcon'
 def CaptainFalconCallBack2():
     character2 = 'Captain Falcon'
 def JigglypuffCallBack():
+    global character
     character = 'Jigglypuff'
 def JigglypuffCallBack2():
     character2 = 'Jigglypuff'
 def PeachCallBack():
+    global character
     character = 'Peach'
 def PeachCallBack2():
     character2 = 'Peach'
 def DaisyCallBack():
+    global character
     character = 'Daisy'
 def DaisyCallBack2():
     character2 = 'Daisy'
 def BowserCallBack():
+    global character
     character = 'Bowser'
 def BowserCallBack2():
     character2 = 'Bowser'
 def IceClimbersCallBack():
+    global character
     character = 'Ice Climbers'
 def IceClimbersCallBack2():
     character2 = 'Ice Climbers'
 def SheikCallBack():
+    global character
     character = 'Sheik'
 def SheikCallBack2():
     character2 = 'Sheik'
 def ZeldaCallBack():
+    global character
     character = 'Zelda'
 def ZeldaCallBack2():
     character2 = 'Zelda'
 def DrMarioCallBack():
+    global character
     character = 'Dr. Mario'
 def DrMarioCallBack2():
     character2 = 'Dr. Mario'
 def PichuCallBack():
+    global character
     character = 'Pichu'
 def PichuCallBack2():
     character2 = 'Pichu'
 def FalcoCallBack():
+    global character
     character = 'Falco'
 def FalcoCallBack2():
     character2 = 'Falco'
 def MarthCallBack():
+    global character
     character = 'Marth'
 def MarthCallBack2():
     character2 = 'Marth'
 def LucinaCallBack():
+    global character
     character = 'Lucina'
 def LucinaCallBack2():
     character2 = 'Lucina'
 def YoungLinkCallBack():
+    global character
     character = 'YoungLink'
 def YoungLinkCallBack2():
     character2 = 'YoungLink'
 def GanondorfCallBack():
+    global character
     character = 'Ganondorf'
 def GanondorfCallBack2():
     character2 = 'Ganondorf'
 def MewtwoCallBack():
+    global character
     character = 'Mewtwo'
 def MewtwoCallBack2():
     character2 = 'Mewtwo'
 def RoyCallBack():
+    global character
     character = 'Roy'
 def RoyCallBack2():
     character2 = 'Roy'
 def ChromCallBack():
+    global character
     character = 'Chrom'
 def ChromCallBack2():
     character2 = 'Chrom'
 def MrGameNWatchCallBack():
+    global character
     character = 'Mr. Game & Watch'
 def MrGameNWatchCallBack2():
     character2 = 'Mr. Game & Watch'
 def MetaKnightCallBack():
+    global character
     character = 'Meta Knight'
 def MetaKnightCallBack2():
     character2 = 'Meta Knight'
 def PitCallBack():
+    global character
     character = 'Pit'
 def PitCallBack2():
     character2 = 'Pit'
 def DarkPitCallBack():
+    global character
     character = 'Dark Pit'
 def DarkPitCallBack2():
     character2 = 'Dark Pit'
 def ZeroSuitSamusCallBack():
+    global character
     character = 'Zero Suit Samus'
 def ZeroSuitSamusCallBack2():
     character2 = 'Zero Suit Samus'
 def WarioCallBack():
+    global character
     character = 'Wario'
 def WarioCallBack2():
     character2 = 'Wario'
 def SnakeCallBack():
+    global character
     character = 'Snake'
 def SnakeCallBack2():
     character2 = 'Snake'
 def IkeCallBack():
+    global character
     character = 'Ike'
 def IkeCallBack2():
     character2 = 'Ike'
 def PokemonTrainerCallBack():
+    global character
     character = 'Pokemon Trainer'
 def PokemonTrainerCallBack2():
     character2 = 'Pokemon Trainer'
 def DiddyKongCallBack():
+    global character
     character = 'Diddy Kong'
 def DiddyKongCallBack2():
     character2 = 'Diddy Kong'
 def LucasCallBack():
+    global character
     character = 'Lucas'
 def LucasCallBack2():
     character2 = 'Lucas'
 def SonicCallBack():
+    global character
     character = 'Sonic'
 def SonicCallBack2():
     character2 = 'Sonic'
 def KingDededeCallBack():
+    global character
     character = 'King Dedede'
 def KingDededeCallBack2():
     character2 = 'King Dedede'
 def OlimarCallBack():
+    global character
     character = 'Olimar'
 def OlimarCallBack2():
     character2 = 'Olimar'
 def LucarioCallBack():
+    global character
     character = 'Lucario'
 def LucarioCallBack2():
     character2 = 'Lucario'
 def ROBCallBack():
+    global character
     character = 'R.O.B.'
 def ROBCallBack2():
     character2 = 'R.O.B.'
 def ToonLinkCallBack():
+    global character
     character = 'Toon Link'
 def ToonLinkCallBack2():
     character2 = 'Toon Link'
 def WolfCallBack():
+    global character
     character = 'Wolf'
 def WolfCallBack2():
     character2 = 'Wolf'
 def VillagerCallBack():
+    global character
     character = 'Villager'
 def VillagerCallBack2():
     character2 = 'Villager'
 def MegaManCallBack():
+    global character
     character = 'Mega Man'
 def MegaManCallBack2():
     character2 = 'Mega Man'
 def WiiFitTrainerCallBack():
+    global character
     character = 'Wii Fit Trainer'
 def WiiFitTrainerCallBack2():
     character2 = 'Wii Fit Trainer'
 def RosalinaNLumaCallBack():
+    global character
     character = 'Rosalina & Luma'
 def RosalinaNLumaCallBack2():
     character2 = 'Rosalina & Luma'
 def LittleMacCallBack():
+    global character
     character = 'Little Mac'
 def LittleMacCallBack2():
     character2 = 'Little Mac'
 def GreninjaCallBack():
+    global character
     character = 'Greninja'
 def GreninjaCallBack2():
     character2 = 'Greninja'
 def PalutenaCallBack():
+    global character
     character = 'Palutena'
 def PalutenaCallBack2():
     character2 = 'Palutena'
 def PacManCallBack():
+    global character
     character = 'Pac-Man'
 def PacManCallBack2():
     character2 = 'Pac-Man'
 def RobinCallBack():
+    global character
     character = 'Robin'
 def RobinCallBack2():
     character2 = 'Robin'
 def ShulkCallBack():
+    global character
     character = 'Shulk'
 def ShulkCallBack2():
     character2 = 'Shulk'
 def BowserJrCallBack():
+    global character
     character = 'Bowser Jr.'
 def BowserJrCallBack2():
     character2 = 'Bowser Jr.'
 def DuckHuntCallBack():
+    global character
     character = 'Duck Hunt'
 def DuckHuntCallBack2():
     character2 = 'Duck Hunt'
 def RyuCallBack():
+    global character
     character = 'Ryu'
 def RyuCallBack2():
     character2 = 'Ryu'
 def KenCallBack():
+    global character
     character = 'Ken'
 def KenCallBack2():
     character2 = 'Ken'
 def CloudCallBack():
+    global character
     character = 'Cloud'
 def CloudCallBack2():
     character2 = 'Cloud'
 def CorrinCallBack():
+    global character
     character = 'Corrin'
 def CorrinCallBack2():
     character2 = 'Corrin'
 def BayonettaCallBack():
+    global character
     character = 'Bayonetta'
 def BayonettaCallBack2():
     character2 = 'Bayonetta'
 def InklingCallBack():
+    global character
     character = 'Inkling'
 def InklingCallBack2():
     character2 = 'Inkling'
 def RidleyCallBack():
+    global character
     character = 'Ridley'
 def RidleyCallBack2():
     character2 = 'Ridley'
 def SimonCallBack():
+    global character
     character = 'Simon'
 def SimonCallBack2():
     character2 = 'Simon'
 def RichterCallBack():
+    global character
     character = 'Richter'
 def RichterCallBack2():
     character2 = 'Richter'
 def KingKRoolCallBack():
+    global character
     character = 'King K. Rool'
 def KingKRoolCallBack2():
     character2 = 'King K. Rool'
 def IsabelleCallBack():
+    global character
     character = 'Isabelle'
 def IsabelleCallBack2():
     character2 = 'Isabelle'
 def IncineroarCallBack():
+    global character
     character = 'Incineroar'
 def IncineroarCallBack2():
     character2 = 'Incineroar'
 def PiranhaPlantCallBack():
+    global character
     character = 'Piranha Plant'
 def PiranhaPlantCallBack2():
     character2 = 'Piranha Plant'
 def JokerCallBack():
+    global character
     character = 'Joker'
 def JokerCallBack2():
     character2 = 'Joker'
 def HeroCallBack():
+    global character
     character = 'Hero'
 def HeroCallBack2():
     character2 = 'Hero'
 def BanjoNKazooieCallBack():
+    global character
     character = 'Banjo & Kazooie'
 def BanjoNKazooieCallBack2():
     character2 = 'Banjo & Kazooie'
 def TerryCallBack():
+    global character
     character = 'Terry'
 def TerryCallBack2():
     character2 = 'Terry'
 def BylethCallBack():
+    global character
     character = 'Byleth'
 def BylethCallBack2():
     character2 = 'Byleth'
 def MinMinCallBack():
+    global character
     character = 'Min Min'
 def MinMinCallBack2():
     character2 = 'Min Min'
 def SteveCallBack():
+    global character
     character = 'Steve'
 def SteveCallBack2():
     character2 = 'Steve'
 def SephirothCallBack():
+    global character
     character = 'Sephiroth'
 def SephirothCallBack2():
     character2 = 'Sephiroth'
 def PyraMythraCallBack():
+    global character
     character = 'Pyra/Mythra'
 def PyraMythraCallBack2():
     character2 = 'Pyra/Mythra'
 def KazuyaCallBack():
+    global character
     character = 'Kazuya'
 def KazuyaCallBack2():
     character2 = 'Kazuya'
 def SoraCallBack():
+    global character
     character = 'Sora'
 def SoraCallBack2():
     character2 = 'Sora'
 def MiiBrawlerCallBack():
+    global character
     character = 'Mii Brawler'
 def MiiBrawlerCallBack2():
     character2 = 'Mii Brawler'
 def MiiSwordfighterCallBack():
+    global character
     character = 'Mii Swordfighter'
 def MiiSwordfighterCallBack2():
     character2 = 'Mii Swordfighter'
 def MiiGunnerCallBack():
+    global character
     character = 'Mii Gunner'
 def MiiGunnerCallBack2():
     character2 = 'Mii Gunner'
@@ -632,4 +717,10 @@ tk.Button(newWindow, command = MiiGunnerCallBack2).place(x=840, y=340)
 
 # running the application
 root.mainloop()
+
+
+# In[ ]:
+
+
+
 
