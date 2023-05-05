@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import tkinter as tk
@@ -119,6 +119,8 @@ def stage_math(selection1, selection2):
         return print('1. Pokemon Stadium 2 \n 2. Smashville \n 3. Final Destination \n 4. Small Battlefield \n 5. Town and City \n 6. Kalos Pokemon League \n  7. Yoshis Story \n 8. Battlefield')
     elif (plat_character_1 < plat_character_2) and (vkp_character_1 < vkp_character_2) and (hkp_character_1 < hkp_character_2):
         return print('1. Final Destination \n 2. Kalos Pokemon League \n 3. Final Destination \n 4. Small Battlefield \n 5. Pokemon Stadium 2 \n 6. Smashville \n  7. Battlefield \n 8. Yoshis Sotry')
+    else:
+        return print('1. Pokemon Stadium 2')
 # creating main window
 root = tk.Tk()
 
@@ -130,431 +132,517 @@ def MarioCallBack():
     character = 'Mario'
 def MarioCallBack2():
     character2 = 'Mario'
+    return stage_math(character, character2)
 def DKCallBack():
     global character
     character = 'Donkey Kong'
 def DKCallBack2():
     character2 = 'Donkey Kong'
+    return stage_math(character, character2)
 def LinkCallBack():
     global character
     character = 'Link'
 def LinkCallBack2():
     character2 = 'Link'
+    return stage_math(character, character2)
 def SamusCallBack():
     global character
     character = 'Samus'
 def SamusCallBack2():
     character2 = 'Samus'
+    return stage_math(character, character2)
 def DarkSamusCallBack():
     global character
     character = 'Dark Samus'
 def DarkSamusCallBack2():
     character2 = 'Dark Samus'
+    return stage_math(character, character2)
 def YoshiCallBack():
     global character
     character = 'Yoshi'
 def YoshiCallBack2():
     character2 = 'Yoshi'
+    return stage_math(character, character2)
 def KirbyCallBack():
     global character
     character = 'Kirby'
 def KirbyCallBack2():
     character2 = 'Kirby'
+    return stage_math(character, character2)
 def FoxCallBack():
     global character
     character = 'Fox'
 def FoxCallBack2():
     character2 = 'Fox'
+    return stage_math(character, character2)
 def PikachuCallBack():
     global character
     character = 'Pikachu'
 def PikachuCallBack2():
     character2 = 'Pikachu'
+    return stage_math(character, character2)
 def LuigiCallBack():
     global character
     character = 'Luigi'
 def LuigiCallBack2():
     character2 = 'Luigi'
+    return stage_math(character, character2)
 def NessCallBack():
     global character
     character = 'Ness'
 def NessCallBack2():
     character2 = 'Ness'
+    return stage_math(character, character2)
 def CaptainFalconCallBack():
     global character
     character = 'Captain Falcon'
 def CaptainFalconCallBack2():
     character2 = 'Captain Falcon'
+    return stage_math(character, character2)
 def JigglypuffCallBack():
     global character
     character = 'Jigglypuff'
 def JigglypuffCallBack2():
     character2 = 'Jigglypuff'
+    return stage_math(character, character2)
 def PeachCallBack():
     global character
     character = 'Peach'
 def PeachCallBack2():
     character2 = 'Peach'
+    return stage_math(character, character2)
 def DaisyCallBack():
     global character
     character = 'Daisy'
 def DaisyCallBack2():
     character2 = 'Daisy'
+    return stage_math(character, character2)
 def BowserCallBack():
     global character
     character = 'Bowser'
 def BowserCallBack2():
     character2 = 'Bowser'
+    return stage_math(character, character2)
 def IceClimbersCallBack():
     global character
     character = 'Ice Climbers'
 def IceClimbersCallBack2():
     character2 = 'Ice Climbers'
+    return stage_math(character, character2)
 def SheikCallBack():
     global character
     character = 'Sheik'
 def SheikCallBack2():
     character2 = 'Sheik'
+    return stage_math(character, character2)
 def ZeldaCallBack():
     global character
     character = 'Zelda'
 def ZeldaCallBack2():
     character2 = 'Zelda'
+    return stage_math(character, character2)
 def DrMarioCallBack():
     global character
     character = 'Dr. Mario'
 def DrMarioCallBack2():
     character2 = 'Dr. Mario'
+    return stage_math(character, character2)
 def PichuCallBack():
     global character
     character = 'Pichu'
 def PichuCallBack2():
     character2 = 'Pichu'
+    return stage_math(character, character2)
 def FalcoCallBack():
     global character
     character = 'Falco'
 def FalcoCallBack2():
     character2 = 'Falco'
+    return stage_math(character, character2)
 def MarthCallBack():
     global character
     character = 'Marth'
 def MarthCallBack2():
     character2 = 'Marth'
+    return stage_math(character, character2)
 def LucinaCallBack():
     global character
     character = 'Lucina'
 def LucinaCallBack2():
     character2 = 'Lucina'
+    return stage_math(character, character2)
 def YoungLinkCallBack():
     global character
     character = 'Young Link'
 def YoungLinkCallBack2():
     character2 = 'Young Link'
+    return stage_math(character, character2)
 def GanondorfCallBack():
     global character
     character = 'Ganondorf'
 def GanondorfCallBack2():
     character2 = 'Ganondorf'
+    return stage_math(character, character2)
 def MewtwoCallBack():
     global character
     character = 'Mewtwo'
 def MewtwoCallBack2():
     character2 = 'Mewtwo'
+    return stage_math(character, character2)
 def RoyCallBack():
     global character
     character = 'Roy'
 def RoyCallBack2():
     character2 = 'Roy'
+    return stage_math(character, character2)
 def ChromCallBack():
     global character
     character = 'Chrom'
 def ChromCallBack2():
     character2 = 'Chrom'
+    return stage_math(character, character2)
 def MrGameNWatchCallBack():
     global character
     character = 'Mr. Game & Watch'
 def MrGameNWatchCallBack2():
     character2 = 'Mr. Game & Watch'
+    return stage_math(character, character2)
 def MetaKnightCallBack():
     global character
     character = 'Meta Knight'
 def MetaKnightCallBack2():
     character2 = 'Meta Knight'
+    return stage_math(character, character2)
 def PitCallBack():
     global character
     character = 'Pit'
 def PitCallBack2():
     character2 = 'Pit'
+    return stage_math(character, character2)
 def DarkPitCallBack():
     global character
     character = 'Dark Pit'
 def DarkPitCallBack2():
     character2 = 'Dark Pit'
+    return stage_math(character, character2)
 def ZeroSuitSamusCallBack():
     global character
     character = 'Zero Suit Samus'
 def ZeroSuitSamusCallBack2():
     character2 = 'Zero Suit Samus'
+    return stage_math(character, character2)
 def WarioCallBack():
     global character
     character = 'Wario'
 def WarioCallBack2():
     character2 = 'Wario'
+    return stage_math(character, character2)
 def SnakeCallBack():
     global character
     character = 'Snake'
 def SnakeCallBack2():
     character2 = 'Snake'
+    return stage_math(character, character2)
 def IkeCallBack():
     global character
     character = 'Ike'
 def IkeCallBack2():
     character2 = 'Ike'
+    return stage_math(character, character2)
 def PokemonTrainerCallBack():
     global character
     character = 'Pokemon Trainer'
 def PokemonTrainerCallBack2():
     character2 = 'Pokemon Trainer'
+    return stage_math(character, character2)
 def DiddyKongCallBack():
     global character
     character = 'Diddy Kong'
 def DiddyKongCallBack2():
     character2 = 'Diddy Kong'
+    return stage_math(character, character2)
 def LucasCallBack():
     global character
     character = 'Lucas'
 def LucasCallBack2():
     character2 = 'Lucas'
+    return stage_math(character, character2)
 def SonicCallBack():
     global character
     character = 'Sonic'
 def SonicCallBack2():
     character2 = 'Sonic'
+    return stage_math(character, character2)
 def KingDededeCallBack():
     global character
     character = 'King Dedede'
 def KingDededeCallBack2():
     character2 = 'King Dedede'
+    return stage_math(character, character2)
 def OlimarCallBack():
     global character
     character = 'Olimar'
 def OlimarCallBack2():
     character2 = 'Olimar'
+    return stage_math(character, character2)
 def LucarioCallBack():
     global character
     character = 'Lucario'
 def LucarioCallBack2():
     character2 = 'Lucario'
+    return stage_math(character, character2)
 def ROBCallBack():
     global character
     character = 'R.O.B.'
 def ROBCallBack2():
     character2 = 'R.O.B.'
+    return stage_math(character, character2)
 def ToonLinkCallBack():
     global character
     character = 'Toon Link'
 def ToonLinkCallBack2():
     character2 = 'Toon Link'
+    return stage_math(character, character2)
 def WolfCallBack():
     global character
     character = 'Wolf'
 def WolfCallBack2():
     character2 = 'Wolf'
+    return stage_math(character, character2)
 def VillagerCallBack():
     global character
     character = 'Villager'
 def VillagerCallBack2():
     character2 = 'Villager'
+    return stage_math(character, character2)
 def MegaManCallBack():
     global character
     character = 'Mega Man'
 def MegaManCallBack2():
     character2 = 'Mega Man'
+    return stage_math(character, character2)
 def WiiFitTrainerCallBack():
     global character
     character = 'Wii Fit Trainer'
 def WiiFitTrainerCallBack2():
     character2 = 'Wii Fit Trainer'
+    return stage_math(character, character2)
 def RosalinaNLumaCallBack():
     global character
     character = 'Rosalina & Luma'
 def RosalinaNLumaCallBack2():
     character2 = 'Rosalina & Luma'
+    return stage_math(character, character2)
 def LittleMacCallBack():
     global character
     character = 'Little Mac'
 def LittleMacCallBack2():
     character2 = 'Little Mac'
+    return stage_math(character, character2)
 def GreninjaCallBack():
     global character
     character = 'Greninja'
 def GreninjaCallBack2():
     character2 = 'Greninja'
+    return stage_math(character, character2)
 def PalutenaCallBack():
     global character
     character = 'Palutena'
 def PalutenaCallBack2():
     character2 = 'Palutena'
+    return stage_math(character, character2)
 def PacManCallBack():
     global character
     character = 'Pac-Man'
 def PacManCallBack2():
     character2 = 'Pac-Man'
+    return stage_math(character, character2)
 def RobinCallBack():
     global character
     character = 'Robin'
 def RobinCallBack2():
     character2 = 'Robin'
+    return stage_math(character, character2)
 def ShulkCallBack():
     global character
     character = 'Shulk'
 def ShulkCallBack2():
     character2 = 'Shulk'
+    return stage_math(character, character2)
 def BowserJrCallBack():
     global character
     character = 'Bowser Jr.'
 def BowserJrCallBack2():
     character2 = 'Bowser Jr.'
+    return stage_math(character, character2)
 def DuckHuntCallBack():
     global character
     character = 'Duck Hunt'
 def DuckHuntCallBack2():
     character2 = 'Duck Hunt'
+    return stage_math(character, character2)
 def RyuCallBack():
     global character
     character = 'Ryu'
 def RyuCallBack2():
     character2 = 'Ryu'
+    return stage_math(character, character2)
 def KenCallBack():
     global character
     character = 'Ken'
 def KenCallBack2():
     character2 = 'Ken'
+    return stage_math(character, character2)
 def CloudCallBack():
     global character
     character = 'Cloud'
 def CloudCallBack2():
     character2 = 'Cloud'
+    return stage_math(character, character2)
 def CorrinCallBack():
     global character
     character = 'Corrin'
 def CorrinCallBack2():
     character2 = 'Corrin'
+    return stage_math(character, character2)
 def BayonettaCallBack():
     global character
     character = 'Bayonetta'
 def BayonettaCallBack2():
     character2 = 'Bayonetta'
+    return stage_math(character, character2)
 def InklingCallBack():
     global character
     character = 'Inkling'
 def InklingCallBack2():
     character2 = 'Inkling'
+    return stage_math(character, character2)
 def RidleyCallBack():
     global character
     character = 'Ridley'
 def RidleyCallBack2():
     character2 = 'Ridley'
+    return stage_math(character, character2)
 def SimonCallBack():
     global character
     character = 'Simon'
 def SimonCallBack2():
     character2 = 'Simon'
+    return stage_math(character, character2)
 def RichterCallBack():
     global character
     character = 'Richter'
 def RichterCallBack2():
     character2 = 'Richter'
+    return stage_math(character, character2)
 def KingKRoolCallBack():
     global character
     character = 'King K. Rool'
 def KingKRoolCallBack2():
     character2 = 'King K. Rool'
+    return stage_math(character, character2)
 def IsabelleCallBack():
     global character
     character = 'Isabelle'
 def IsabelleCallBack2():
     character2 = 'Isabelle'
+    return stage_math(character, character2)
 def IncineroarCallBack():
     global character
     character = 'Incineroar'
 def IncineroarCallBack2():
     character2 = 'Incineroar'
+    return stage_math(character, character2)
 def PiranhaPlantCallBack():
     global character
     character = 'Piranha Plant'
 def PiranhaPlantCallBack2():
     character2 = 'Piranha Plant'
+    return stage_math(character, character2)
 def JokerCallBack():
     global character
     character = 'Joker'
 def JokerCallBack2():
     character2 = 'Joker'
+    return stage_math(character, character2)
 def HeroCallBack():
     global character
     character = 'Hero'
 def HeroCallBack2():
     character2 = 'Hero'
+    return stage_math(character, character2)
 def BanjoNKazooieCallBack():
     global character
     character = 'Banjo & Kazooie'
 def BanjoNKazooieCallBack2():
     character2 = 'Banjo & Kazooie'
+    return stage_math(character, character2)
 def TerryCallBack():
     global character
     character = 'Terry'
 def TerryCallBack2():
     character2 = 'Terry'
+    return stage_math(character, character2)
 def BylethCallBack():
     global character
     character = 'Byleth'
 def BylethCallBack2():
     character2 = 'Byleth'
+    return stage_math(character, character2)
 def MinMinCallBack():
     global character
     character = 'Min Min'
 def MinMinCallBack2():
     character2 = 'Min Min'
+    return stage_math(character, character2)
 def SteveCallBack():
     global character
     character = 'Steve'
 def SteveCallBack2():
     character2 = 'Steve'
+    return stage_math(character, character2)
 def SephirothCallBack():
     global character
     character = 'Sephiroth'
 def SephirothCallBack2():
     character2 = 'Sephiroth'
+    return stage_math(character, character2)
 def PyraMythraCallBack():
     global character
     character = 'Pyra/Mythra'
 def PyraMythraCallBack2():
     character2 = 'Pyra/Mythra'
+    return stage_math(character, character2)
 def KazuyaCallBack():
     global character
     character = 'Kazuya'
 def KazuyaCallBack2():
     character2 = 'Kazuya'
+    return stage_math(character, character2)
 def SoraCallBack():
     global character
     character = 'Sora'
 def SoraCallBack2():
     character2 = 'Sora'
+    return stage_math(character, character2)
 def MiiBrawlerCallBack():
     global character
     character = 'Mii Brawler'
 def MiiBrawlerCallBack2():
     character2 = 'Mii Brawler'
+    return stage_math(character, character2)
 def MiiSwordfighterCallBack():
     global character
     character = 'Mii Swordfighter'
 def MiiSwordfighterCallBack2():
     character2 = 'Mii Swordfighter'
+    return stage_math(character, character2)
 def MiiGunnerCallBack():
     global character
     character = 'Mii Gunner'
 def MiiGunnerCallBack2():
     character2 = 'Mii Gunner'
+    return stage_math(character, character2)
 
 # reading the image
 background = tk.Label(root, image = img)
