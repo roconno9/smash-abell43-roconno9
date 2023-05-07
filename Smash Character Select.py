@@ -4,17 +4,19 @@
 # In[ ]:
 
 
-import tkinter as tk
-from PIL import ImageTk, Image
-import os
-
-# In[ ]:
-
+'''
+This code will produce two windows that allow for character selection. From here, the code will run automatically
+one two characters have been selected. 
+'''
 
 import tkinter as tk
 from PIL import ImageTk, Image
 import os
 
+# Setting up the dataset that will be used to determine which stages are most appropriate in each match up
+# It's important that all characters have the exact writing of their screen name on the character select screen
+# We are looking at how much vertical kill power, horizontal kill power, and usage of platforms for each character
+# If more information became crucial to stage selection, it could be added into the dictionary in the future
 character_dict = {'Mario': {'number': 1, 'plats': 2, 'vkp': 4, 'hkp':72}, 
                   'Donkey Kong': {'number': 2, 'plats': 19, 'vkp': 1, 'hkp': 23}, 
                   'Link': {'number': 3, 'plats': 3, 'vkp':64 ,'hkp':22}, 
@@ -106,17 +108,36 @@ character_dict = {'Mario': {'number': 1, 'plats': 2, 'vkp': 4, 'hkp':72},
 
 
 def stage_math(selection1, selection2):
+    '''
+    This will calculate what stage should be selected based on the dictionary information for each character.
+    
+    **parameters**
+    
+        selection1: *string*
+            Character 1 selection.
+        selection2: *string*
+            Character 2 selection.
+            
+    **returns**
+    
+        String list of ideal stage selections.
+    '''
+    
+    # Placing the data information for each character into more easily viewed variables
+    # We will be comparing the data between the two to determine the stage
     plat_character_1 = character_dict[selection1]['plats']
     plat_character_2 = character_dict[selection2]['plats']
     vkp_character_1 = character_dict[selection1]['vkp']
     vkp_character_2 = character_dict[selection2]['vkp']
     hkp_character_1 = character_dict[selection1]['hkp']
     hkp_character_2 = character_dict[selection2]['hkp']
+    
+    # Calculating the difference between the two
     plat_diff = plat_character_1 - plat_character_2
     vkp_diff = vkp_character_1 - vkp_character_2
     hkp_diff = hkp_character_1 - hkp_character_2
 
-    #If the difference is less than ten then the difference in these parameters is next to negligible and should not count towards picking a stage
+    # If the difference is less than ten then the difference in these parameters is next to negligible and should not count towards picking a stage
     if plat_diff >= -10 and plat_diff <= 10:
         plat_character_1 = 1
         plat_character_2 = 1
@@ -127,7 +148,10 @@ def stage_math(selection1, selection2):
         hkp_character_1 = 1
         hkp_character_2 = 1
 
-    #comparisons made for picking a stage
+    # Comparisons made for picking a stage
+    # Creating conditional statements that calculate the best stage based on had information
+    # Ideally, this would be able to be more targeted based on personal preference
+    # At current, it would have to be manually considered while looking at the list
     if selection1 == selection2:
         return print('You are playing the ditto, you should pick your favorite stage as the stage will not be a factor in the match up')
     elif (plat_character_1 >= plat_character_2) and (vkp_character_1 >= vkp_character_2) and (hkp_character_1 < hkp_character_2):
@@ -148,12 +172,14 @@ def stage_math(selection1, selection2):
         return print('1. Final Destination \n 2. Kalos Pokemon League \n 3. Final Destination \n 4. Small Battlefield \n 5. Pokemon Stadium 2 \n 6. Smashville \n  7. Battlefield \n 8. Yoshis Sotry')
     else:
         return print('1. Pokemon Stadium 2')
-# creating main window
+
+# Creating main window
 root = tk.Tk()
 
-# loading the image
+# Loading the image
 img = ImageTk.PhotoImage(Image.open("SmashRoster.jpg"))
 
+# Creating callback functions for when the characters are selected
 def MarioCallBack():
     global character
     character = 'Mario'
@@ -671,7 +697,10 @@ def MiiGunnerCallBack2():
     character2 = 'Mii Gunner'
     return stage_math(character, character2)
 
-# reading the image
+# Creating the background image of the character selector screen
+# Creating buttons for each character to allow for the selection
+# This is for our character selection, we will need an additional window for the second selection
+# We want to do it separately so you can change selections over the course of a set
 background = tk.Label(root, image = img)
 words = tk.Label(root, text= 'Select your character!')
 MarioButton = tk.Button(root, command=MarioCallBack)
@@ -761,7 +790,7 @@ MiiBrawlerButton = tk.Button(root, command=MiiBrawlerCallBack)
 MiiSwordfighterButton = tk.Button(root, command=MiiSwordfighterCallBack)
 MiiGunnerButton = tk.Button(root, command=MiiGunnerCallBack)
 
-# setting the application
+# Placing all of the buttons that we just created
 background.pack(side = "bottom", fill = "both", expand = "yes")
 words.pack(side = 'top')
 MarioButton.place(x=10, y=30)
@@ -851,6 +880,8 @@ MiiBrawlerButton.place(x=660, y=340)
 MiiSwordfighterButton.place(x=750, y=340)
 MiiGunnerButton.place(x=840, y=340)
 
+# Creating a new window that copies a lot of the current sets of the initial window
+# This will window will act as the selector for the opponent's character
 newWindow = tk.Toplevel(root)
 tk.Label(newWindow, text= 'Select opponent character!').pack(side='top')
 tk.Label(newWindow, image= img).pack(side = "bottom", fill = "both", expand = "yes")
@@ -941,6 +972,6 @@ tk.Button(newWindow, command = MiiBrawlerCallBack2).place(x=660, y=340)
 tk.Button(newWindow, command = MiiSwordfighterCallBack2).place(x=750, y=340)
 tk.Button(newWindow, command = MiiGunnerCallBack2).place(x=840, y=340)
 
-# running the application
+# Running the application
 root.mainloop()
 
